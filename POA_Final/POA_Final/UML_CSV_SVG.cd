@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="POA_Final.Cercle" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAIAEAAAAEAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Cercle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POA_Final.Chemin" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAEAAACEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Chemin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POA_Final.Couleur" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAgACAEAAAACAEAAQA=</HashCode>
+      <FileName>Couleur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POA_Final.Dessin" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAEAAAABEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dessin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POA_Final.Element" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAIQgQEAEIAIAAAACAAQBgAAEIYAAACAAA=</HashCode>
+      <FileName>Element.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="POA_Final.Ellipse" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAQAAAAAIAkAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ellipse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POA_Final.Point" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAABgAAAAYAA=</HashCode>
+      <FileName>Point.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POA_Final.Polygone" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAIAEAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Polygone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POA_Final.Program" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POA_Final.Rectangle" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAIAEAAAAEAAAAAAAAAGAAAAAAAAAAAA=</HashCode>
+      <FileName>Rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POA_Final.Texte" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAACAAAAAAIAEAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Texte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="POA_Final.IRotation" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRotation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="POA_Final.ITranslation" Collapsed="true">
+    <Position X="16" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITranslation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
