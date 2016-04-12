@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POA_Final
 {
-    interface ITranslation
+    public interface ITranslation
     {
         void Translater(double dx, double dy);
     }

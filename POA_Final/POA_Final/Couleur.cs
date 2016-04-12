@@ -7,7 +7,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    class Couleur
+    public class Couleur
     {
         private int R;
         private int G;

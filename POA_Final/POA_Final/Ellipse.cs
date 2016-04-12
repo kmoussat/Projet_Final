@@ -7,7 +7,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    class Ellipse : Element
+    public class Ellipse : Element
     {
         private Point centre;
         private double rx;

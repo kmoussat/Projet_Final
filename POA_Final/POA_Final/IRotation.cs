@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POA_Final
 {
-    interface IRotation
+   public interface IRotation
     {
         void Rotation(double alpha, double cx, double cy);
     }

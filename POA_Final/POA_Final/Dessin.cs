@@ -8,7 +8,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    class Dessin
+    public class Dessin
     {
         private List<Element> ListElement;
 

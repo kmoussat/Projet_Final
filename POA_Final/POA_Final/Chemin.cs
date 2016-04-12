@@ -7,7 +7,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    class Chemin : Element
+    public class Chemin : Element
     {
         private string path;
 

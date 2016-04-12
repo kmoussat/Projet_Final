@@ -7,7 +7,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    class Polygone : Element
+    public class Polygone : Element
     {
         private string points;
 

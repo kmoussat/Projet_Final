@@ -7,7 +7,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    class Rectangle : Element
+    public class Rectangle : Element
     {
         private Point point;
         private double largeur;

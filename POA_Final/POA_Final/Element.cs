@@ -7,7 +7,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    class Element : IComparable<Element>
+    public class Element : IComparable<Element>
     {
         private string nom;
         private int idElement;

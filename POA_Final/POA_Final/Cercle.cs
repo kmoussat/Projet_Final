@@ -7,7 +7,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    class Cercle : Element
+    public class Cercle : Element
     {
         private Point centre;
         private double r;

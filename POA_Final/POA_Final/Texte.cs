@@ -7,7 +7,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    class Texte : Element
+   public class Texte : Element
     {
         private Point point;
         private string contenu;
