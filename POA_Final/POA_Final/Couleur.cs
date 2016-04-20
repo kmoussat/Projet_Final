@@ -7,12 +7,15 @@ using System.IO;
 
 namespace POA_Final
 {
+    
+    // Classe déterminant les couleurs
     public class Couleur
     {
         private int R;
         private int G;
         private int B;
 
+// En RGB 
         public int R1
         {
             get
@@ -59,6 +62,7 @@ namespace POA_Final
             this.B1 = B;
         }
 
+//Méthode ToString qui renvoie les couleurs RGB d'un élément au format svg
         public override string ToString()
         {
             return R1 + "," + G1 + "," + B1;
