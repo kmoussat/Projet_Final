@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace POA_Final
 {
+    
+    // Classe implémentant les points des polygones à transformer
     public class Point
     {
         private double x;
         private double y;
 
+// Un point est défini par des coordonnées en abscisse et en ordonnée 
         public Point(double x, double y)
         {
             this.x = x;
