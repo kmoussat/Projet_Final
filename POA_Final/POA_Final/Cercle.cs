@@ -14,7 +14,7 @@ namespace POA_Final
         private Point centre;
         private double r;
 
-//Constructeur Cerlce par un rayon et un point central
+//Constructeur Cercle par un rayon et un point central
         public Cercle(string nom, int idElement, Point centre, double r, Couleur couleur, int ordre) : base(nom, idElement, couleur, ordre)
         {
             this.centre = centre;
