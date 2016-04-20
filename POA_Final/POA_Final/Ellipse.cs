@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,12 +7,15 @@ using System.IO;
 
 namespace POA_Final
 {
+    
+    //Classe héritage Element
     public class Ellipse : Element
     {
         private Point centre;
         private double rx;
         private double ry;
 
+//Constructeur Cerlce par deux rayons et un point central
         public Ellipse(string nom, int idElement, Point centre, double rx, double ry, Couleur couleur, int ordre) : base(nom, idElement, couleur, ordre)
         {
             this.centre = centre;
@@ -20,12 +23,15 @@ namespace POA_Final
             this.ry = ry;
         }
 
+// Méthode de translation des points
         public void Translater(double dx, double dy)
         {
             this.DX = dx;
             this.DY = dy;
         }
 
+
+// Méthode de rotation des points
         public void Rotation(double alpha, double cx, double cy)
         {
             this.Alpha = alpha;
@@ -33,6 +39,7 @@ namespace POA_Final
             this.CY = cy;
         }
 
+//  Méthode de dessin qui renvoie au format svg les données csv
         public override string ToString()
         {
             if (this.DX == 0 && this.DY == 0)
