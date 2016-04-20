@@ -10,9 +10,11 @@ namespace POA_Final
 {
     public class Dessin
     {
+        //Un dessin est une combinaison de plusieurs éléments. Un dessin contient donc une liste d'éléments.
+        //Attribut
         private List<Element> ListElement;
 
-
+        // Constructeur
         public Dessin()
         {
             ListElement = new List<Element>();
@@ -22,7 +24,11 @@ namespace POA_Final
         {
             get { return ListElement; }
         }
-
+        
+        /* 
+        La méthode lireFichier implémente un StreamReader capable de lire les caractères d'un fichier.
+        Les données sont ensuite stockées dans des variables qui seront reconverties dans d'autres méthodes.
+        */
         public void lireFichier(String nomDoc)
         {
             try
@@ -33,10 +39,13 @@ namespace POA_Final
 
                 while (ligne != null)
                 {
+                    // A chaque ligne, le code différencie le type de figure et génère une classe en fonction du premier élément de la ligne avant le premier ';'
+                    //temp prend toutes les valeurs de la ligne
                     string[] temp = ligne.Split(';');
                     switch (temp[0])
                     {
                         case "Cercle":
+                        //La classe s'implémente avec tous les éléments de temp
                             Cercle c = new Cercle(temp[0], Convert.ToInt32(temp[1]), new Point(double.Parse(temp[2]), double.Parse(temp[3])), Convert.ToInt32(temp[4]), new Couleur(int.Parse(temp[5]), int.Parse(temp[6]), int.Parse(temp[7])), Convert.ToInt32(temp[8]));
                             if (c != null)
                             {
@@ -83,12 +92,15 @@ namespace POA_Final
                                 ListElement.Add(t);
                             }
                             break;
-
+                        
+                        //si une ligne commence par une rotation ou une translation, c'est tout le dessin qui est affecté
+                        //on modifie donc chaque élément de la liste du dessin en utilisant les méthodes des classes concernées
                         case "Translation":
                             int idTranslation = Convert.ToInt32(temp[1]);
                             double dx = double.Parse(temp[2]);
                             double dy = double.Parse(temp[3]);
-
+                            
+                            //le foreach est utilisé pour parcourir chaque élément de la liste
                             foreach (Element el in ListElement)
                             {
                                 if (idTranslation == el.IdElement)
@@ -159,33 +171,42 @@ namespace POA_Final
                             }
                             break;
                     }
+                    // Le code change de ligne
                     ligne = monStreamReader.ReadLine();
                 }
+                //fermeture de la lecture du fichier
                 monStreamReader.Close();
             }
+            //try/catch pour gérer la gestion d'erreur par exeption - ici, gère l'echec de génération du streamread
             catch
             {
                 Console.WriteLine("Il y a eu une erreur dans l'ouverture du fichier");
             }
         }
-
+        
+        //ecrireFichier est la méthode de convertion des données extraites, en SVG
         public void ecrireFichier(String nomDoc)
         {
             try
             {
+                //Ouverture d'un StreamWriter capable de générer et d'écrire des fichiers
                 StreamWriter monStreamWriter = new StreamWriter(nomDoc + ".svg");
-
+                
+                //xmlnx donne le type de rédaction du fichier svg avec les balises associées
                 monStreamWriter.WriteLine("<svg xmlns='http://www.w3.org/2000/svg' version='1.1'>");
-
+                
+                //le code parcours la liste d'élément et utilise la méthode ToString de chaque élément pour y écrire les balises.
+                //Les ToString ont été prévus pour renvoyer les balises avec les données stockées dans les attributs de chaque élément.
                 foreach (Element e in ListElement)
                 {
                     monStreamWriter.WriteLine(e.ToString());
                 }
 
                 monStreamWriter.WriteLine("</svg>");
+                //fermeture du stream
                 monStreamWriter.Close();
             }
-            catch
+            catch // gestion d'erreur par exception - ici en cas d'échec de génération du StreamWriter
             {
                 Console.WriteLine("Il y a eu une erreur dans l'écriture du fichier");
             }
