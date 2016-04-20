@@ -8,7 +8,7 @@ using System.IO;
 namespace POA_Final
 {
     //Classe héritage Element
-    public class Polygone : Element
+    public class Polygone : Element, IRotation
     {
         private string points;
 

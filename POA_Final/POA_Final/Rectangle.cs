@@ -8,7 +8,7 @@ using System.IO;
 namespace POA_Final
 {
     //Classe héritage Element
-    public class Rectangle : Element
+    public class Rectangle : Element, ITranslation, IRotation
     {
         private Point point;
         private double largeur;

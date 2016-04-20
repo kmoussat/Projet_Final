@@ -9,7 +9,7 @@ namespace POA_Final
 {
     
     //Classe héritage Element
-    public class Ellipse : Element
+    public class Ellipse : Element, ITranslation, IRotation
     {
         private Point centre;
         private double rx;

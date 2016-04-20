@@ -7,7 +7,7 @@ using System.IO;
 
 namespace POA_Final
 {
-    public class Chemin : Element
+    public class Chemin : Element, IRotation
     {
         //Attribut
         private string path;
@@ -18,8 +18,7 @@ namespace POA_Final
             this.path = path;
         }
         
-        #region méthodes
-        
+                
         public void Translater(double dx, double dy)
         {
             this.DX = dx;
@@ -59,7 +58,6 @@ namespace POA_Final
                 }
             }
         }
-        #endregion
     }
 }
 

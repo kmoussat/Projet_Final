@@ -9,7 +9,7 @@ namespace POA_Final
 {
    
     //Classe héritage Element
-   public class Texte : Element
+   public class Texte : Element, IRotation, ITranslation
     {
         private Point point;
         private string contenu;

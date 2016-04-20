@@ -9,7 +9,7 @@ namespace POA_Final
 {
     
     //Classe héritage Element
-    public class Cercle : Element
+    public class Cercle : Element, ITranslation
     {
         private Point centre;
         private double r;

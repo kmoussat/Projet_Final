@@ -33,7 +33,7 @@ namespace POA_Final
         {
             try
             {
-                StreamReader monStreamReader = new StreamReader(@"..\..\..\" + nomDoc + ".csv");
+                StreamReader monStreamReader = new StreamReader(@"" + nomDoc + ".csv");
 
                 string ligne = monStreamReader.ReadLine();
 
@@ -180,7 +180,7 @@ namespace POA_Final
             //try/catch pour gérer la gestion d'erreur par exeption - ici, gère l'echec de génération du streamread
             catch
             {
-                Console.WriteLine("Il y a eu une erreur dans l'ouverture du fichier");
+                Console.WriteLine("Erreur - Lecture");
             }
         }
         
@@ -208,7 +208,7 @@ namespace POA_Final
             }
             catch // gestion d'erreur par exception - ici en cas d'échec de génération du StreamWriter
             {
-                Console.WriteLine("Il y a eu une erreur dans l'écriture du fichier");
+                Console.WriteLine("Erreur- Ecriture");
             }
         }
     }
