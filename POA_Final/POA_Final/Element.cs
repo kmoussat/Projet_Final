@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +7,8 @@ using System.IO;
 
 namespace POA_Final
 {
+    
+    // Classe des éléments convertis de csv en svg
     public class Element : IComparable<Element>
     {
         private string nom;
@@ -19,6 +21,7 @@ namespace POA_Final
         private double cX;
         private double cY;
 
+/* Un élément est défini par un nom, un id, une couleur, un ordre, et des coordonnées pour ses points*/
         public Element(string nom, int idElement, Couleur couleur, int ordre)
         {
             this.nom = nom;
@@ -27,6 +30,7 @@ namespace POA_Final
             this.ordre = ordre;
         }
 
+// Méthode comparant l'ordre des éléments
         public int CompareTo(Element figure)
         {
             return ordre.CompareTo(figure.ordre);
