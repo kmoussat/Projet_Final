@@ -20,7 +20,7 @@ namespace POA_Final
           
         }
         
-        #REGION - Méthodes
+        // Méthodes
         public void Translater(double dx, double dy)
         {
             this.DX = dx;
@@ -61,6 +61,5 @@ namespace POA_Final
             }
         }
         
-        #ENDREGION
     }
 }
