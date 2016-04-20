@@ -15,7 +15,7 @@ namespace POA_Final
         private double rx;
         private double ry;
 
-//Constructeur Cerlce par deux rayons et un point central
+//Constructeur Ellipse par deux rayons et un point central
         public Ellipse(string nom, int idElement, Point centre, double rx, double ry, Couleur couleur, int ordre) : base(nom, idElement, couleur, ordre)
         {
             this.centre = centre;
