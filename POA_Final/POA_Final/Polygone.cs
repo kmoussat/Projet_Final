@@ -18,13 +18,6 @@ namespace POA_Final
             this.points = points;
         }
 
-// Méthode de translation des points
-        public void Translater(double dx, double dy)
-        {
-            this.DX = dx;
-            this.DY = dy;
-        }
-
 // Méthode de rotation des points
         public void Rotation(double alpha, double cx, double cy)
         {
@@ -32,7 +25,6 @@ namespace POA_Final
             this.CX = cx;
             this.CY = cy;
         }
-        
         
 //  Méthode de dessin qui renvoie au format svg les données csv
         public override string ToString()

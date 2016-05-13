@@ -28,14 +28,6 @@ namespace POA_Final
             this.DX = dx;
             this.DY = dy;
         }
-
-// Méthode de rotation des points
-        public void Rotation(double alpha, double cx, double cy)
-        {
-            this.Alpha = alpha;
-            this.CX = cx;
-            this.CY = cy;
-        }
         
         
 //  Méthode de dessin qui renvoie au format svg les données csv
@@ -56,7 +48,7 @@ namespace POA_Final
             {
                 if (this.Alpha == 0 && CX == 0 && CY == 0)
                 {
-                    return "<circle cx=\"" + centre.X + "\" cy=\"" + centre.Y + "\" r=\"" + r + "\" style=\"fill :rgb(" + Couleur + ")\"" + "transform =\"translate(" + this.DX + "," + this.DY + ")\" />";
+                    return "<circle cx=\"" + centre.X + "\" cy=\"" + centre.Y + "\" r=\"" + r + "\" style=\"fill :rgb(" + Couleur + ")\"" + " transform =\"translate(" + this.DX + "," + this.DY + ")\" />";
                 }
                 else
                 {

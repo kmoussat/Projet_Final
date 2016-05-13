@@ -36,6 +36,7 @@ namespace POA_Final
             d5.listElement.Sort();
             d5.ecrireFichier("exemple4");
 
+            Console.WriteLine("Fin du programme, appuyez pour quitter");
             Console.ReadKey();
         }
     }

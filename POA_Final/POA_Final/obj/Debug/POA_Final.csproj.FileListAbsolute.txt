@@ -4,3 +4,9 @@ C:\Users\Ken\Documents\GitHub\Projet_Final\POA_Final\POA_Final\bin\Debug\POA_Fin
 C:\Users\Ken\Documents\GitHub\Projet_Final\POA_Final\POA_Final\bin\Debug\POA_Final.pdb
 C:\Users\Ken\Documents\GitHub\Projet_Final\POA_Final\POA_Final\obj\Debug\POA_Final.exe
 C:\Users\Ken\Documents\GitHub\Projet_Final\POA_Final\POA_Final\obj\Debug\POA_Final.pdb
+C:\Users\Paul\Dropbox\Cours ESILV\Année 3\Programmation Objet Avancée\Git\Projet_Final\POA_Final\POA_Final\bin\Debug\POA_Final.exe.config
+C:\Users\Paul\Dropbox\Cours ESILV\Année 3\Programmation Objet Avancée\Git\Projet_Final\POA_Final\POA_Final\obj\Debug\POA_Final.exe
+C:\Users\Paul\Dropbox\Cours ESILV\Année 3\Programmation Objet Avancée\Git\Projet_Final\POA_Final\POA_Final\obj\Debug\POA_Final.pdb
+C:\Users\Paul\Dropbox\Cours ESILV\Année 3\Programmation Objet Avancée\Git\Projet_Final\POA_Final\POA_Final\bin\Debug\POA_Final.exe
+C:\Users\Paul\Dropbox\Cours ESILV\Année 3\Programmation Objet Avancée\Git\Projet_Final\POA_Final\POA_Final\bin\Debug\POA_Final.pdb
+C:\Users\Paul\Dropbox\Cours ESILV\Année 3\Programmation Objet Avancée\Git\Projet_Final\POA_Final\POA_Final\obj\Debug\POA_Final.csprojResolveAssemblyReference.cache

@@ -17,13 +17,6 @@ namespace POA_Final
         {
             this.path = path;
         }
-        
-                
-        public void Translater(double dx, double dy)
-        {
-            this.DX = dx;
-            this.DY = dy;
-        }
 
         public void Rotation(double alpha, double cx, double cy)
         {
